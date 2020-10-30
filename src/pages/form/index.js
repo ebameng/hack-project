@@ -22,7 +22,7 @@ class App extends React.Component {
         education,
         experience} = this.state
       if (!age || !education || !experience) {
-        return
+        return alert('有信息未填写完整')
       }
       console.log(error, value);
       const data = {
@@ -31,6 +31,9 @@ class App extends React.Component {
         experience,
         ...value
       }
+      this.props.history.push({
+        pathname: '/flow'
+      })
       console.log(data)
     });
   }
