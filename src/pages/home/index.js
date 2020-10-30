@@ -1,8 +1,19 @@
 import React from 'react';
+import { Button } from 'antd-mobile';
+import './index.css'
 
 function App (props) {
   return (
-    <div>home</div>
+    <div className='wrap'>
+      <img src='' />
+      <h1 className='tile'>ZA-AI面试官</h1>
+      <div className='content'>
+        <p><img src='' />拍个小视频即可完成面试</p>
+        <p><img src='' />拍个小视频即可完成面试</p>
+        <p><img src='' />拍个小视频即可完成面试</p>
+      </div>
+      <Button>default</Button>
+    </div>
   )
 }
 
