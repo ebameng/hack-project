@@ -6,12 +6,19 @@ function App(props) {
      console.log('cccc')
   }
   return ( <div className='begin' id='question'>
-      <p className='title'> 即将开始视频答题 </p> 
-      <p className='desc'> 打开前置摄像头， 确保正对摄像头 </p> 
-      <div className='example'> 
-        <img src='./assets/images/example.png'/>
+      <p className='title'> 基础信息 </p> 
+      <div className='q-item'>
+        <p className='q-ques'>1. 您应聘的岗位是？</p>
+        <div className='q-answer'>ccc</div>
       </div>
-      <div className='btn' onClick={beginInterview}>准备好了，立即开始</div>
+      <div className='video-box'> 
+       xxxx
+      </div>
+      <div className='bottom-action'>
+        <div className='hang-up-btn'><img src='./assets/images/hangup.png'/></div>
+        <div className='b-btn' onClick={beginInterview}>准备好了，立即开始</div>
+      </div>
+     
 
       </div>
   )
