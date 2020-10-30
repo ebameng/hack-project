@@ -22,7 +22,7 @@ export default (props) => {
 
   useEffect(() => {
     axios.post('/user', {
-      
+
     })
       .then(function (response) {
         const dataSource = response.data;
@@ -98,7 +98,7 @@ export default (props) => {
           <p>{dataSource.gender} {dataSource.age} {dataSource.phone}</p>
           <p>应聘职位: {dataSource.position}</p>
         </div>
-        <img src="" alt="" className='result-header-image'/>
+        <img src={dataSource.photo || './assets/images/default.png'} alt="" className='result-header-image'/>
       </div>
 
       <div className='result-body'>
