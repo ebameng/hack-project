@@ -1,0 +1,84 @@
+.begin {
+  text-align: center
+ }
+  .begin .title {
+    font-family: PingFangSC-Semibold;
+    font-size: 0.28rem;
+    color: #0B0E26;
+    font-weight: bold;
+    margin-top: 0.8rem;
+    margin-bottom: 0.35rem;
+  }
+  .begin .desc {
+    font-family: PingFangSC-Regular;
+    font-size: 0.14rem;
+    color: #0B0E26;
+    line-height: 0.17rem;
+    margin-bottom: 0.67rem;
+  }
+  .begin .example {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+   
+  }
+  .begin .example img {
+    width: 1.73rem;
+    height: 1.73rem;
+  }
+  .begin .btn {
+    background: #32CB9D;
+    border-radius: 0.24rem;
+    font-family: PingFangSC-Regular;
+    font-size: 0.14rem;
+    color: #FFFFFF;
+    text-align: center;
+    position: fixed;
+    bottom: .3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2.8rem;
+    height: .44rem;
+    display: inline-block;
+    z-index: 9;
+    cursor: pointer;
+    border-color: transparent;
+  }
+
+  #question {
+    text-align: left;
+    padding-left: .32rem; 
+  }
+  #question .video-box {
+    position: fixed;
+    top:0;
+    right:0;
+  }
+  #question .bottom-action {
+    position: fixed;
+    bottom: .3rem;
+    left: 0rem;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  #question .hang-up-btn {
+    cursor: pointer;
+  }
+  #question .hang-up-btn img{
+    width: .44rem;
+    height: .44rem;
+  }
+  #question .b-btn {
+    background: #32CB9D;
+    border-radius: 0.24rem;
+    font-family: PingFangSC-Regular;
+    font-size: 0.14rem;
+    color: #FFFFFF;
+    text-align: center;
+    width: 1.9rem;
+    height: .44rem;
+    border-color: transparent;
+  }
+   
+  

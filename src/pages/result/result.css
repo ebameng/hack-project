@@ -1,1 +1,51 @@
-@import "../../media.css";
+.result{
+    min-height: 100vh;
+    padding: 0 0.14rem 0;
+    background-color: #222439;
+    font-size: 0.2rem;
+}
+
+.result-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.12rem;
+    border-bottom: 1px rgba(151,151,151,0.21) solid;
+}
+
+.result-header-content h3{
+    font-size: 0.28rem;
+    color: #FFFFFF;
+}
+
+.result-header-content p{
+    font-size: 0.14rem;
+    color: #A6A7B4;
+    line-height: 0.22rem;
+}
+
+.result-header img{
+    width: 0.78rem;
+    height: 0.78rem;
+}
+
+.result-echart-box{
+    width: 3rem;
+    height: 3rem;
+    margin: 0 auto;
+}
+
+.result-body{
+    padding: 0.12rem;
+}
+
+.result-body h2{
+    font-size: 0.24rem;
+    color: #FFFFFF;
+}
+
+.result-body p{
+    font-size: 0.14rem;
+    color: #A6A7B4;
+    line-height: 0.22rem;
+}
