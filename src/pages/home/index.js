@@ -5,7 +5,7 @@ import './index.css'
 function App (props) {
   return (
     <div className='wrap'>
-      <img src='' />
+      <img className='aiimg' src='./assets/images/ai@2x.png' />
       <h1 className='tile'>ZA-AI面试官</h1>
       <div className='content'>
         <p><img src='' />拍个小视频即可完成面试</p>
