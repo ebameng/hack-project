@@ -1,8 +1,7 @@
-import React,{ useState, Fragment, useEffect } from 'react';
+import React, { useState, Fragment } from 'react';
 import BeginEnd from './begin-end';
 import Question from './question';
 import './index.css'
-import { number } from 'echarts/lib/export';
 import Axios from 'axios';
 
 let socketR
