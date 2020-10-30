@@ -11,21 +11,22 @@ class App extends React.Component {
     this.state = {
       age: null,
       education: null,
-      experience: null
+      experience: null,
+      position: null
     }
   }
   componentDidMount() {}
   submit = () => {
     this.props.form.validateFields((error, value) => {
-      const {age,
+      const {gender,
         education,
         experience, position} = this.state
-      if (!age || !education || !experience) {
+      if (!gender || !education || !experience) {
         return alert('有信息未填写完整')
       }
       console.log(error, value);
       const data = {
-        age,
+        gender,
         education,
         experience,
         position,
@@ -113,10 +114,8 @@ class App extends React.Component {
           title='求职岗位'
           list={
             [
-              { value: '专科及以下', label: '专科及以下' },
-              { value: '本科', label: '本科' },
-              { value: '硕士', label: '硕士' },
-              { value: '博士及以上', label: '博士及以上' }
+              { value: '法务', label: '法务' },
+              { value: '合规', label: '合规' }
             ]
           }
           field='position'

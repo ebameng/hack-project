@@ -63,16 +63,16 @@ function App (props) {
       const {v, n, nr, a, emo} = lexer
       let items = (emo.items && emo.items[0]) || {}
       let { confidence, negative_prob, positive_prob } = items
-      let dom1 = <div>您的答案：{result}</div>
+      let dom1 = <div>----您的答案----：{result}</div>
       let dom2 = <div>
-        <p>词性分析：</p>
+        <p>----词性分析----</p>
         <p>动词：{v.toString()}</p>
         <p>名词：{n.toString()}</p>
         <p>人名：{nr.toString()}</p>
         <p>形容词：{a.toString()}</p>
       </div>
       let dom3 = <div>
-        情感分析：<br />
+        ----情感分析----<br />
         自信心：{confidence}<br />
         词性正向: {negative_prob}<br />
         词性负向: {positive_prob}<br />
