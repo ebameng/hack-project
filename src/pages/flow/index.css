@@ -50,6 +50,9 @@
     text-align: left;
     padding-left: .32rem; 
   }
+  #question .title {
+    text-align: left;
+  }
   #question .video-box {
     position: fixed;
     top:0;
