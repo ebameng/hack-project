@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Arrow20pxLight</title>
+    <g id="页面1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="2基础表单" transform="translate(-335.000000, -269.000000)" fill-rule="nonzero" stroke="#CFD0D6" stroke-width="2">
+            <g id="编组-4" transform="translate(20.000000, 157.000000)">
+                <g id="编组-3">
+                    <g id="En输入/常规/未输入" transform="translate(0.000000, 88.000000)">
+                        <g id="ico/20/键头" transform="translate(315.000000, 24.000000)">
+                            <g id="ico/键头">
+                                <polyline id="矩形" transform="translate(8.000000, 10.000000) rotate(-45.000000) translate(-8.000000, -10.000000) " points="12 6 11.7647059 13.7647059 4 14"></polyline>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
