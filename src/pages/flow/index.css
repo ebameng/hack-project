@@ -39,8 +39,46 @@
     transform: translateX(-50%);
     width: 2.8rem;
     height: .44rem;
-    line-height: .44rem;
-    display: block;
+    display: inline-block;
     z-index: 9;
     cursor: pointer;
+    border-color: transparent;
   }
+
+  #question {
+    text-align: left;
+    padding-left: .32rem; 
+  }
+  #question .video-box {
+    position: fixed;
+    top:0;
+    right:0;
+  }
+  #question .bottom-action {
+    position: fixed;
+    bottom: .3rem;
+    left: 0rem;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  #question .hang-up-btn {
+    cursor: pointer;
+  }
+  #question .hang-up-btn img{
+    width: .44rem;
+    height: .44rem;
+  }
+  #question .b-btn {
+    background: #32CB9D;
+    border-radius: 0.24rem;
+    font-family: PingFangSC-Regular;
+    font-size: 0.14rem;
+    color: #FFFFFF;
+    text-align: center;
+    width: 1.9rem;
+    height: .44rem;
+    border-color: transparent;
+  }
+   
+  
