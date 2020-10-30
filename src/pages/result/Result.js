@@ -4,40 +4,39 @@ import echarts from 'echarts/lib/echarts';
 import 'echarts/lib/chart/radar';
 import 'echarts/lib/component/tooltip';
 import 'echarts/lib/component/title';
+import { Toast } from 'antd-mobile'
+import { urlQuery } from '../../utils'
 
 import './result.css'
 
 export default (props) => {
-  const [dataSource, setDataSource] = useState({
-    name: '王二',
-    gender: '男',
-    age: '28',
-    phone: '18565685956',
-    position: '前端开发工程师',
-    mark: [80, 90, 70, 100, 90, 80],
-    average: '89',
-    rank: '86'
-  })
+  const [dataSource, setDataSource] = useState(null)
   const echartRef = createRef()
 
   useEffect(() => {
-    axios.post('/user', {
+    const chartBox = echartRef.current;
+    const phone = urlQuery('phone', window.location.search)
 
+    axios.post('http://localhost:8888/api/result', {
+      phone: phone
     })
       .then(function (response) {
-        const dataSource = response.data;
-        setDataSource(dataSource)
+        if (response.data.success) {
+          const dataSource = response.data.data;
+          setDataSource(dataSource)
 
-        handleMakeChart(dataSource)
+          handleMakeChart(dataSource, chartBox)
+        } else {
+          Toast.info(response.data.msg)
+        }
       })
       .catch(function (error) {
         console.log(error);
       });
   }, [])
 
-  const handleMakeChart = (dataSource) => {
-
-    const myChart = echarts.init(echartRef.current);
+  const handleMakeChart = (dataSource, chartBox) => {
+    const myChart = echarts.init(chartBox);
     myChart.setOption({
       title: null,
       tooltip: {},
@@ -90,6 +89,10 @@ export default (props) => {
     });
   }
 
+  if (!dataSource) {
+    return null
+  }
+
   return(
     <div className='result'>
       <div className='result-header'>
@@ -104,7 +107,7 @@ export default (props) => {
       <div className='result-body'>
         <h2>综合评分: {dataSource.average}</h2>
 
-        <div className='result-echart-box' ref={echartRef}></div>
+        <div className='result-echart-box' ref={echartRef} />
       </div>
     </div>
   )
