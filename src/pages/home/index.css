@@ -6,12 +6,12 @@
   color: #FFFFFF;
 }
 .aiimg {
-  width: 8.2rem;
+  width: .82rem;
 }
 .img-wrap {
   margin: 0 auto;
-  width: 8.2rem;
-  padding-top: 10rem;
+  width: .82rem;
+  padding-top: 1rem;
 }
 
 .title {
@@ -19,15 +19,15 @@
   font-size: 24px;
   color: #FFFFFF;
   text-align: center;
-  padding-top: 3.2rem;
+  padding-top: .32rem;
 }
 
 .content {
-  width: 28rem;
-  margin: 7.6rem auto 5rem;
+  width: 2.8rem;
+  margin: .76rem auto .5rem;
   border-top: 1px solid #4B4E68;
   border-bottom: 1px solid #4B4E68;
-  padding: 3.2rem 0;
+  padding: .32rem 0;
   font-family: PingFangSC-Regular;
   font-size: 14px;
   color: #FFFFFF;
@@ -44,8 +44,8 @@
   margin: 0;
 }
 .home-btn {
-  width: 28rem !important;
-  border-radius: 2.8rem !important;
+  width: 2.8rem !important;
+  border-radius: .28rem !important;
   background-color: #32CB9D !important;
-  margin: 7rem auto 0 !important;
+  margin: .7rem auto 0 !important;
 }

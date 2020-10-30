@@ -14,7 +14,11 @@ function App (props) {
         <p className='content-item'><img src='./assets/images/home2.svg' />拍个小视频即可完成面试</p>
         <p className='content-item'><img src='./assets/images/home3.svg' />拍个小视频即可完成面试</p>
       </div>
-      <Button type='primary' className='home-btn'>立即体验</Button>
+      <Button type='primary' className='home-btn' onClick={() => {
+        props.history.push({
+          pathname: '/form'
+        })
+      }}>立即体验</Button>
     </div>
   )
 }
