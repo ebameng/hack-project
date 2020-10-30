@@ -6,17 +6,17 @@
 }
 .form-head-img {
   position: absolute;
-  width: 3.2rem;
+  width: .32rem;
   right: 0;
-  top: 4rem;
+  top: .4rem;
 }
 
 .form-title {
   font-family: PingFangSC-Semibold;
   font-size: 28px;
   margin: 0;
-  padding-top: 6rem;
-  padding-left: 2rem;
+  padding-top: .6rem;
+  padding-left: .2rem;
 }
 .am-list-item {
   background-color: #292D4D !important;
@@ -30,7 +30,7 @@
   padding-right: 20px;
 }
 .am-list-item .am-input-label.am-input-label-5 {
-  width: 7.4rem !important;
+  width: .74rem !important;
 }
 .am-list-item .am-input-control input {
   font-family: PingFangSC-Regular !important;
@@ -57,11 +57,11 @@ html:not([data-scale]) .am-list-line::after {
 }
 
 .am-input-item {
-  margin: 4.4rem 0;
+  margin: .44rem 0;
 }
 .home-btn {
-  width: 28rem !important;
-  border-radius: 2.8rem !important;
+  width: 2.8rem !important;
+  border-radius: .28rem !important;
   background-color: #32CB9D !important;
-  margin: 3.6rem auto 0 !important;
+  margin: .36rem auto 0 !important;
 }
