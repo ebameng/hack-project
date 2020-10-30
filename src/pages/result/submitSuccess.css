@@ -1,0 +1,34 @@
+.submit-success{
+    min-height: 100vh;
+    padding: 0.58rem 0.24rem;
+    background: url("/assets/images/moon.png") no-repeat left bottom;
+    background-color: #222439;
+}
+
+.submit-success-title{
+    margin-bottom: 0.08rem;
+    font-size: 0.28rem;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.submit-success-desc{
+    margin-bottom: 0.58rem;
+    font-size: 0.14rem;
+    color: #A6A7B4;
+    text-align: center;
+    line-height: 0.22rem;
+}
+
+.submit-success-finished{
+    display: block;
+    width: 1.28rem;
+    height: 0.36rem;
+    margin: 0 auto;
+    line-height: 0.36rem;
+    background: #32CB9D;
+    border-radius: 0.24rem;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}

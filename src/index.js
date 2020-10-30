@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
-import Router from './routes'
+import Router from './routes';
+import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router />
+    <div className='root-box'>
+      <Router />
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
