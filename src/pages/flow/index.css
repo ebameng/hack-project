@@ -1,5 +1,13 @@
 .begin {
-  text-align: center
+  background-color: #FFFFFF;
+  text-align: center;
+  position: relative;
+ }
+ .begin-head-img {
+    position: absolute;
+    width: .32rem;
+    right: 0;
+    top: .4rem;
  }
   .begin .title {
     font-family: PingFangSC-Semibold;
@@ -8,6 +16,7 @@
     font-weight: bold;
     margin-top: 0.8rem;
     margin-bottom: 0.35rem;
+    text-align: left;
   }
   .begin .desc {
     font-family: PingFangSC-Regular;
@@ -80,5 +89,12 @@
     height: .44rem;
     border-color: transparent;
   }
-   
+  
+  .q-answer {
+    border: 1px solid #CFD0D6;
+    border-radius: 4px;
+    margin-right: .4rem;
+    padding: .05rem;
+    margin-bottom: .3rem;
+  }
   

@@ -14,13 +14,12 @@ class App extends React.Component {
       experience: null
     }
   }
-  componentDidMount() {
-  }
+  componentDidMount() {}
   submit = () => {
     this.props.form.validateFields((error, value) => {
       const {age,
         education,
-        experience} = this.state
+        experience, position} = this.state
       if (!age || !education || !experience) {
         return alert('有信息未填写完整')
       }
@@ -29,8 +28,10 @@ class App extends React.Component {
         age,
         education,
         experience,
+        position,
         ...value
       }
+      sessionStorage.setItem('data', data)
       this.props.history.push({
         pathname: '/flow'
       })
@@ -67,7 +68,7 @@ class App extends React.Component {
               { value: '女', label: '女' }
             ]
           }
-          field='age'
+          field='gender'
           setValue={this.setValue}
         />
         <InputItem
@@ -108,8 +109,21 @@ class App extends React.Component {
           field='experience'
           setValue={this.setValue}
         />
+         <CheckboxComponent
+          title='求职岗位'
+          list={
+            [
+              { value: '专科及以下', label: '专科及以下' },
+              { value: '本科', label: '本科' },
+              { value: '硕士', label: '硕士' },
+              { value: '博士及以上', label: '博士及以上' }
+            ]
+          }
+          field='position'
+          setValue={this.setValue}
+        />
         <InputItem
-          {...getFieldProps('mobile')}
+          {...getFieldProps('phone')}
           clear
           placeholder='请输入'
           ref={el => this.autoFocusInst = el}
