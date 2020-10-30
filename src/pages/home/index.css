@@ -1,14 +1,51 @@
 .wrap {
-  width: 100vh;
+  /* // width: 100vh; */
   min-height: 100vh;
-  height: auto;
+  /* // height: auto; */
   background: #292D4D;
   color: #FFFFFF;
 }
 .aiimg {
-  width: .82rem;
+  width: 8.2rem;
+}
+.img-wrap {
+  margin: 0 auto;
+  width: 8.2rem;
+  padding-top: 10rem;
 }
 
 .title {
-  color: red;
+  font-family: PingFangSC-Semibold;
+  font-size: 24px;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 3.2rem;
+}
+
+.content {
+  width: 28rem;
+  margin: 7.6rem auto 5rem;
+  border-top: 1px solid #4B4E68;
+  border-bottom: 1px solid #4B4E68;
+  padding: 3.2rem 0;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #FFFFFF;
+  line-height: 17px;
+}
+.content-item {
+  margin: 0 0 16px 0;
+}
+.content-item img {
+  font-size: 16px;
+  margin-right: 8px;
+}
+.content-item:last-child {
+  margin: 0;
+}
+.home-btn {
+  width: 28rem !important;
+  border-radius: 2.8rem !important;
+  background-color: #32CB9D !important;
+  margin: 7rem auto 0 !important;
 }
