@@ -103,7 +103,6 @@ export default (props) => {
 
       <div className='result-body'>
         <h2>综合评分: {dataSource.average}</h2>
-        <p>排名: {dataSource.rank}</p>
 
         <div className='result-echart-box' ref={echartRef}></div>
       </div>
