@@ -10,9 +10,9 @@ function App (props) {
       </div>
       <h1 className='title'>ZA-AI面试官</h1>
       <div className='content'>
-        <p className='content-item'><img src='./assets/images/home1.svg' />拍个小视频即可完成面试</p>
-        <p className='content-item'><img src='./assets/images/home2.svg' />拍个小视频即可完成面试</p>
-        <p className='content-item'><img src='./assets/images/home3.svg' />拍个小视频即可完成面试</p>
+        <p className='content-item'><img src='./assets/images/home1.svg' />语音问答，快速完成初试</p>
+        <p className='content-item'><img src='./assets/images/home2.svg' />AI 语音+视频分析</p>
+        <p className='content-item'><img src='./assets/images/home3.svg' />自动生成简历报告</p>
       </div>
       <Button type='primary' className='home-btn' onClick={() => {
         props.history.push({

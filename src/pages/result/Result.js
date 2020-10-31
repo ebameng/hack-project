@@ -1,4 +1,4 @@
-import React, { useEffect, useState, createRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import echarts from 'echarts/lib/echarts';
 import 'echarts/lib/chart/radar';
@@ -11,21 +11,19 @@ import './result.css'
 
 export default (props) => {
   const [dataSource, setDataSource] = useState(null)
-  const echartRef = createRef()
 
   useEffect(() => {
-    const chartBox = echartRef.current;
-    const phone = urlQuery('phone', window.location.search)
+    const phone = urlQuery('token', window.location.search)
 
-    axios.post('http://localhost:8888/api/result', {
-      phone: phone
+    axios.post('http://172.20.10.3:8899/api/result', {
+      phone
     })
       .then(function (response) {
         if (response.data.success) {
           const dataSource = response.data.data;
           setDataSource(dataSource)
 
-          handleMakeChart(dataSource, chartBox)
+          handleMakeChart(dataSource)
         } else {
           Toast.info(response.data.msg)
         }
@@ -35,8 +33,8 @@ export default (props) => {
       });
   }, [])
 
-  const handleMakeChart = (dataSource, chartBox) => {
-    const myChart = echarts.init(chartBox);
+  const handleMakeChart = (dataSource) => {
+    const myChart = echarts.init(document.getElementById('my-chart'));
     myChart.setOption({
       title: null,
       tooltip: {},
@@ -107,7 +105,7 @@ export default (props) => {
       <div className='result-body'>
         <h2>综合评分: {dataSource.average}</h2>
 
-        <div className='result-echart-box' ref={echartRef} />
+        <div className='result-echart-box' id='my-chart' />
       </div>
     </div>
   )

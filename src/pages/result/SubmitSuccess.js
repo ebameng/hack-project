@@ -5,7 +5,7 @@ export default (props) => {
   const { history } = 'props'
 
   const handleClickFinished = () => {
-    history.push('/')
+    props.history.push('/')
   }
 
   return(

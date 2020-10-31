@@ -62,7 +62,7 @@ function App (props) {
       </div>
       <div className='bottom-action'>
         <div className='hang-up-btn fl' onClick={hangUp}><img src='./assets/images/hangup.png' /></div>
-        <button className='b-btn' onMouseEnter={startRecord} onClick={endRecord}>按住回答</button>
+        <button className='b-btn' onTouchStart={startRecord} onTouchEnd={endRecord}>按住回答</button>
         <div className='hang-up-btn fr' onClick={nextQuestion}><img src='./assets/images/next.png' /></div>
       </div>
     </div>
