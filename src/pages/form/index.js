@@ -32,7 +32,7 @@ class App extends React.Component {
         position,
         ...value
       }
-      sessionStorage.setItem('data', data)
+      sessionStorage.setItem('data', JSON.stringify(data))
       this.props.history.push({
         pathname: '/flow'
       })

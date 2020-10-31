@@ -15,7 +15,7 @@ export default (props) => {
   useEffect(() => {
     const phone = urlQuery('token', window.location.search)
 
-    axios.post('http://172.20.10.3:8899/api/result', {
+    axios.post('https://www.jokagamer.cn/api/result', {
       phone
     })
       .then(function (response) {

@@ -116,20 +116,20 @@ function App (props) {
 
   // 回答完毕提交答案和视频
   function submitAnswer () {
-    // let data = sessionStorage.getItem('data')
-    // Axios.post('http://172.20.10.3:8899/api/save', {
-    //   ...data,
-    //   question: JSON.stringify(list),
-    //   answer: JSON.stringify(allAnswer)
-    // }).then((rs) => {
-    //   if (rs.success) {
-    //     alert('提交成功')
-    //     console.log('提交成功')
-    //      props.history.push({
-    //       pathname: '/submit-success'
-    //     })
-    //   }
-    // })
+    let data = JSON.parse(sessionStorage.getItem('data'))
+    Axios.post('https://www.jokagamer.cn/api/save', {
+      ...data,
+      question: JSON.stringify(list),
+      answer: JSON.stringify(allAnswer)
+    }).then((rs) => {
+      if (rs.success) {
+        alert('提交成功')
+        console.log('提交成功')
+         props.history.push({
+          pathname: '/submit-success'
+        })
+      }
+    })
     props.history.push({
       pathname: '/submit-success'
     })
